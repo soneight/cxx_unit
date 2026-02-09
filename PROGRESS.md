@@ -2,9 +2,6 @@
 
 ## current
 
-- `chrono`
-- ratio
-
 ## in-progress
 
 - algorithm
@@ -19,12 +16,14 @@
 
 - array
 - bitset
+- `chrono`
 - complex
 - exception
 - future
 - initializer_list
 - string
 - string_view
+- ratio
 - vector
 
 ## missing???

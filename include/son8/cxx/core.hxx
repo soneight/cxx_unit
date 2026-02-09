@@ -9,6 +9,7 @@
 //#include <son8/c/math.hxx>
 // std
 #include <array>
+#include <chrono>
 #include <memory>
 #include <initializer_list>
 #include <ratio>
@@ -112,6 +113,7 @@ namespace son8::cxx {
 namespace son8::cxx::chrono {
     // C++11
     // -- chrono
+    using std::common_type;
     using std::chrono::duration;
     using std::chrono::duration_values;
     using std::chrono::hours;

@@ -6,15 +6,11 @@
 #include <son8/cxx/core.hxx>
 // std
 #include <bitset>
-#include <chrono>
 
 namespace son8::cxx {
     // C++98
     // -- bitset
     using std::bitset;
-    // C++11
-    // -- chrono
-    using std::common_type;
 } // son8::cxx
 
 #endif//SON8_CXX_PLAN_HXX
