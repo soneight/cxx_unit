@@ -8,6 +8,9 @@
 #include <type_traits>
 
 namespace son8::cxx {
+    // C++98
+    // -- core.hxx->string
+    using std::char_traits;
     // C++11
     // -- type_traits
     using std::enable_if;
