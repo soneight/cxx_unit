@@ -5,9 +5,12 @@
 */
 #include <son8/cxx/core.hxx>
 // std
+#include <exception>
 
 namespace son8::cxx {
-
+    // C++98
+    // -- exception
+    using std::exception;
 } // son8::cxx
 
 #endif//SON8_CXX_FLOW_HXX

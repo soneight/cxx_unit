@@ -5,9 +5,12 @@
 */
 #include <son8/cxx/core.hxx>
 // std
+#include <type_traits>
 
 namespace son8::cxx {
-
+    // C++11
+    // -- type_traits
+    using std::enable_if;
 } // son8::cxx
 
 #endif//SON8_CXX_META_HXX

@@ -5,9 +5,13 @@
  */
 #include <son8/cxx/core.hxx>
 // std
+#include <iostream>
 
 namespace son8::cxx {
-
+    // C++98
+    // -- iostream
+    using std::cout;
+    using std::endl;
 } // son8::cxx
 
 #endif//SON8_CXX_OOPS_HXX

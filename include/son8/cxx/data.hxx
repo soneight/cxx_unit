@@ -5,9 +5,15 @@
 */
 #include <son8/cxx/core.hxx>
 // std
+#include <algorithm>
+#include <vector>
 
 namespace son8::cxx {
-
+    // C++98
+    // -- algorithm
+    using std::copy;
+    // -- vector
+    using std::vector;
 } // son8::cxx
 
 #endif//SON8_CXX_DATA_HXX
