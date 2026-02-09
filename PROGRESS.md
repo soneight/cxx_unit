@@ -2,11 +2,15 @@
 
 ## current
 
+- `chrono`
+- ratio
+
 ## in-progress
 
 - algorithm
 - atomic
 - functional
+- memory
 - iostream
 - type_traits
 - utility
@@ -15,7 +19,9 @@
 
 - array
 - bitset
+- complex
 - exception
+- future
 - initializer_list
 - string
 - string_view

@@ -13,7 +13,11 @@ namespace son8::cxx {
     using std::char_traits;
     // C++11
     // -- type_traits
+    using std::common_type;
     using std::enable_if;
+    // C++14
+    // -- type_traits
+    using std::common_type_t;
 } // son8::cxx
 
 #endif//SON8_CXX_META_HXX
