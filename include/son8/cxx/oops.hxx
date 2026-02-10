@@ -5,10 +5,10 @@
  */
 #include <son8/cxx/core.hxx>
 // TODO son8
-//#include <son8/c/char.hxx>
-//#include <son8/c/file.hxx>
-//#include <son8/c/util.hxx>
-//#include <son8/c/wide.hxx>
+#include <son8/c/char.hxx>
+#include <son8/c/file.hxx>
+#include <son8/c/util.hxx>
+#include <son8/c/wide.hxx>
 // std
 #include <iostream>
 

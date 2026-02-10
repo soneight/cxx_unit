@@ -4,9 +4,9 @@
     CORE: language related and core utilities
 */
 // TODO son8
-//#include <son8/c/base.hxx>
-//#include <son8/c/byte.hxx>
-//#include <son8/c/math.hxx>
+#include <son8/c/base.hxx>
+#include <son8/c/byte.hxx>
+#include <son8/c/math.hxx>
 // std
 #include <array>
 #include <chrono>
