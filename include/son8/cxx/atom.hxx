@@ -24,9 +24,18 @@ namespace son8::cxx {
     using std::packaged_task;
     using std::promise;
     using std::shared_future;
-    // -- core.hxx->memory
+    // -- memory<-core.hxx
+    using std::owner_less;
+    using std::enable_shared_from_this;
     using std::shared_ptr;
     using std::weak_ptr;
+    using std::allocate_shared;
+    using std::const_pointer_cast;
+    using std::dynamic_pointer_cast;
+    using std::get_deleter;
+    using std::make_shared;
+    using std::reinterpret_pointer_cast;
+    using std::static_pointer_cast;
     // -- thread
     using std::thread;
     // C++11

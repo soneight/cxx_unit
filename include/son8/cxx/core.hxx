@@ -12,18 +12,40 @@
 #include <chrono>
 #include <memory>
 #include <initializer_list>
+#include <limits>
+#include <new>
 #include <ratio>
+#include <scoped_allocator>
 #include <string>
 #include <string_view>
+#include <typeindex>
+#include <typeinfo>
 #include <utility>
 
 namespace son8::cxx {
     // C++98
+    // -- limits
+    using std::float_denorm_style;
+    using std::float_round_style;
+    using std::numeric_limits;
+    // -- memory
+    using std::allocator;
+    // std::auto_ptr - deprecated C++11, removed C++17
+    // std::get_temporary_buffer - deprecated C++17, removed C++20
+    // std::raw_storage_iterator - deprecated C++17, removed C++20
+    // std::return_temporary_buffer - deprecated C++17, removed C++20
+    // -- new
+    using std::new_handler;
+    using std::nothrow_t;
+    using std::nothrow;
+    using std::set_new_handler;
     // -- string
     using std::basic_string;
     using std::string;
     using std::u16string;
     using std::u32string;
+    // -- typeinfo
+    using std::type_info;
     // -- utility
     using std::swap;
     // C++11
@@ -41,9 +63,20 @@ namespace son8::cxx {
     // -- initializer_list
     using std::initializer_list;
     // -- memory
-    using std::enable_shared_from_this;
-    using std::unique_ptr;
+    using std::allocator_arg_t;
+    using std::default_delete;
     using std::uses_allocator;
+    using std::unique_ptr;
+    using std::allocator_arg;
+    using std::addressof;
+    using std::align;
+    // std::declare_no_pointers - removed C++23
+    // std::declare_reachable - removed C++23
+    // std::get_pointer_safety - removed C++23
+    // std::undeclare_no_pointers - removed C++23
+    // std::undeclare_reachable - removed C++23
+    // -- new
+    using std::get_new_handler;
     // -- ratio
     using std::atto;
     using std::centi;
@@ -72,8 +105,12 @@ namespace son8::cxx {
     using std::ratio_not_equal;
     using std::ratio_subtract;
     using std::tera;
+    // -- scoped_allocator
+    using std::scoped_allocator_adaptor;
     // -- string
     using std::to_string;
+    // -- typeindex
+    using std::type_index;
     // -- utility
     using std::move;
     // C++14
@@ -82,6 +119,8 @@ namespace son8::cxx {
     using std::cend;
     using std::crbegin;
     using std::rbegin;
+    // -- memory
+    using std::make_unique;
     // -- utility
     using std::exchange;
     // C++17
@@ -89,6 +128,12 @@ namespace son8::cxx {
     using std::data;
     using std::empty;
     using std::size;
+    // -- memory
+    using std::destroy_at;
+    // -- new
+    using std::hardware_constructive_interference_size;
+    using std::hardware_destructive_interference_size;
+    using std::align_val_t;
     // -- string_view
     using std::basic_string_view;
     using std::string_view;
@@ -126,8 +171,8 @@ namespace son8::cxx::chrono {
     using std::chrono::steady_clock;
     using std::chrono::system_clock;
     using std::chrono::time_point;
-    using std::chrono::time_point_cast;
     using std::chrono::treat_as_floating_point;
+    using std::chrono::time_point_cast;
 } // son8::cxx::chrono
 
 #endif//SON8_CXX_CORE_HXX

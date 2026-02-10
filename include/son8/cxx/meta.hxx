@@ -9,9 +9,13 @@
 
 namespace son8::cxx {
     // C++98
-    // -- core.hxx->string
+    // string<-core.hxx
     using std::char_traits;
     // C++11
+    // memory<-core.hxx
+    using std::allocator_traits;
+    // std::pointer_safety - removed in C++23
+    using std::pointer_traits;
     // -- type_traits
     using std::common_type;
     using std::enable_if;

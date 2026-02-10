@@ -14,20 +14,20 @@
 
 namespace son8::cxx {
     // C++98
-    // -- core.hxx->string
+    // string<-core.hxx
     using std::getline;
     using std::wstring;
     // -- iostream
     using std::cout;
     using std::endl;
     // C++11
-    // -- core.hxx->string
+    // string<-core.hxx
     using std::stoi;
     using std::stol;
     using std::stoll;
     using std::to_wstring;
     // C++17
-    // -- core.hxx->string_view
+    // string_view<-core.hxx
     using std::wstring_view;
 } // son8::cxx
 

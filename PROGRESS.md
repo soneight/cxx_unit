@@ -2,29 +2,39 @@
 
 ## current
 
+- `system_error`
+
 ## in-progress
 
-- algorithm
-- atomic
-- functional
-- memory
-- iostream
-- type_traits
-- utility
+- `algorithm`
+- `atomic`
+- `functional`
+- `iostream`
+- `memory_resource`
+- `type_traits`
+- `utility`
 
 ## completed
 
-- array
-- bitset
+- `array`
+- `bitset`
 - `chrono`
-- complex
-- exception
-- future
-- initializer_list
-- string
-- string_view
-- ratio
-- vector
+- `complex`
+- `exception`
+- `execution`
+- `future`
+- `initializer_list`
+- `limits`
+- `memory`
+- `new`
+- `stdexcept`
+- `scoped_allocator`
+- `string`
+- `string_view`
+- `ratio`
+- `typeindex`
+- `typeinfo`
+- `vector`
 
 ## missing???
 

@@ -11,6 +11,9 @@ namespace son8::cxx {
     // C++98
     // -- bitset
     using std::bitset;
+    // C++17
+    // new<-core.hxx
+    using std::launder;
 } // son8::cxx
 
 #endif//SON8_CXX_PLAN_HXX
