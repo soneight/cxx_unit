@@ -1,4 +1,4 @@
-cmake_minimum_required( VERSION 3.8...3.27 )
+cmake_minimum_required( VERSION 3.14...3.27 )
 project( cxx_unit VERSION 0.0.0 LANGUAGES CXX )
 set( SON8PROJ son8__${PROJECT_NAME} )
 # Private configuration under source directory
