@@ -2,7 +2,7 @@
 
 ## current
 
-- `system_error`
+- `any`
 
 ## in-progress
 
@@ -10,8 +10,6 @@
 - `atomic`
 - `functional`
 - `iostream`
-- `memory_resource`
-- `type_traits`
 - `utility`
 
 ## completed
@@ -31,11 +29,15 @@
 - `scoped_allocator`
 - `string`
 - `string_view`
+- `system_error`
 - `ratio`
+- `type_traits`
 - `typeindex`
 - `typeinfo`
 - `vector`
 
 ## missing???
 
+- ..._v, ..._t helpers
 - pmr namespace?
+- `memory_resource`

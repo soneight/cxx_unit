@@ -31,7 +31,7 @@ namespace son8::cxx {
     using std::runtime_error;
     using std::underflow_error;
     // C++11
-    // memory<-core.hxx
+    // -- memory<-core.hxx
     using std::bad_weak_ptr;
     // new<-core.hxx
     using std::bad_array_new_length;
