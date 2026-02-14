@@ -7,23 +7,29 @@
 #include <son8/c/base.hxx>
 #include <son8/c/byte.hxx>
 #include <son8/c/math.hxx>
-// std
+// std (? not sure to include in core)
+#include <any> // ?
 #include <array>
-#include <chrono>
+#include <chrono> // ?
 #include <memory>
 #include <initializer_list>
 #include <limits>
 #include <new>
-#include <ratio>
-#include <scoped_allocator>
+#include <optional> // ?
+#include <ratio> // ?
+#include <scoped_allocator> // ?
 #include <string>
 #include <string_view>
-#include <typeindex>
-#include <typeinfo>
+#include <tuple>
+#include <typeindex> // ?
+#include <typeinfo>  // ?
 #include <utility>
+#include <variant>
 
 namespace son8::cxx {
     // C++98
+    // -- (_many_:tuple,utility,...)
+    using std::swap;
     // -- limits
     using std::float_denorm_style;
     using std::float_round_style;
@@ -47,19 +53,23 @@ namespace son8::cxx {
     // -- typeinfo
     using std::type_info;
     // -- utility
-    using std::swap;
+    using std::pair;
+    using std::make_pair;
     // C++11
     // -- (_many_:array,...)
     using std::begin;
     using std::end;
-    // -- (_many_:array,string...)
+    // -- (_many_:array,tuple,variant...)
+    using std::get;
+    // -- (_many_:array,string,tuple...)
     using std::tuple_size;
     using std::tuple_element;
     // -- (_many_:string,...)
     using std::hash;
+    // -- (_many_:tuple,utility)
+    using std::ignore;
     // -- array
     using std::array;
-    using std::get;
     // -- initializer_list
     using std::initializer_list;
     // -- memory
@@ -109,10 +119,21 @@ namespace son8::cxx {
     using std::scoped_allocator_adaptor;
     // -- string
     using std::to_string;
+    // -- tuple
+    using std::tuple;
+    using std::forward_as_tuple;
+    using std::make_tuple;
+    using std::tie;
+    using std::tuple_cat;
     // -- typeindex
     using std::type_index;
     // -- utility
+    using std::piecewise_construct_t;
+    using std::piecewise_construct;
+    using std::declval;
+    using std::forward;
     using std::move;
+    using std::move_if_noexcept;
     // C++14
     // -- (_many_:array,string,string_view,...)
     using std::cbegin;
@@ -123,22 +144,50 @@ namespace son8::cxx {
     using std::make_unique;
     // -- utility
     using std::exchange;
+    using std::integer_sequence;
     // C++17
     // -- (_many_:array,string,string_view,...)
     using std::data;
     using std::empty;
     using std::size;
+    // -- any
+    using std::any;
+    using std::any_cast;
+    using std::make_any;
     // -- memory
     using std::destroy_at;
     // -- new
     using std::hardware_constructive_interference_size;
     using std::hardware_destructive_interference_size;
     using std::align_val_t;
+    // -- optional
+    using std::nullopt_t;
+    using std::optional;
+    using std::nullopt;
+    using std::make_optional;
     // -- string_view
     using std::basic_string_view;
     using std::string_view;
     using std::u16string_view;
     using std::u32string_view;
+    // -- tuple
+    using std::apply;
+    using std::make_from_tuple;
+    // -- utility
+    using std::in_place_index;
+    using std::in_place_index_t;
+    using std::in_place_t;
+    using std::in_place_type;
+    using std::in_place_type_t;
+    using std::in_place;
+    using std::as_const;
+    // -- variant
+    using std::monostate;
+    using std::variant;
+    using std::variant_npos;
+    using std::get_if;
+    using std::holds_alternative;
+    using std::visit;
     // C++11
     // -- (_many_:string,string_view,...)
     inline namespace literals {
@@ -154,6 +203,10 @@ namespace son8::cxx {
         inline namespace string_view_literals { using namespace std::literals::string_view_literals; }
     }
 } // son8::cxx
+
+namespace son8::cxx::rel_ops {
+    using namespace std::rel_ops;
+}
 
 namespace son8::cxx::chrono {
     // C++11

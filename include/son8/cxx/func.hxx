@@ -11,6 +11,8 @@ namespace son8::cxx {
     // C++11
     // -- functional
     using std::function;
+    using std::reference_wrapper;
+    using std::mem_fn;
 } // son8::cxx
 
 #endif//SON8_CXX_FUNC_HXX

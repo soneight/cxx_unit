@@ -47,6 +47,13 @@ namespace son8::cxx {
     using std::make_error_code;
     using std::make_error_condition;
     using std::system_category;
+    // C++17
+    // -- any<-core.hxx
+    using std::bad_any_cast;
+    // -- optional
+    using std::bad_optional_access;
+    // -- variant
+    using std::bad_variant_access;
 
 } // son8::cxx
 

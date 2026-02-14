@@ -2,7 +2,7 @@
 
 ## current
 
-- `any`
+- containers library
 
 ## in-progress
 
@@ -10,10 +10,10 @@
 - `atomic`
 - `functional`
 - `iostream`
-- `utility`
 
 ## completed
 
+- `any`
 - `array`
 - `bitset`
 - `chrono`
@@ -25,6 +25,7 @@
 - `limits`
 - `memory`
 - `new`
+- `optional`
 - `stdexcept`
 - `scoped_allocator`
 - `string`
@@ -34,6 +35,7 @@
 - `type_traits`
 - `typeindex`
 - `typeinfo`
+- `utility`
 - `vector`
 
 ## missing???

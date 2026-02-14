@@ -129,6 +129,11 @@ namespace son8::cxx {
     using std::negation;
     using std::has_unique_object_representations;
     using std::void_t;
+    // -- variant<-core.hxx
+    using std::variant_alternative;
+    using std::variant_alternative_t;
+    using std::variant_size;
+    using std::variant_size_v;
 } // son8::cxx
 
 #endif//SON8_CXX_META_HXX
