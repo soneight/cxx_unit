@@ -13,6 +13,7 @@
 #include <chrono> // ?
 #include <memory>
 #include <initializer_list>
+#include <iterator>
 #include <limits>
 #include <new>
 #include <optional> // ?
@@ -28,8 +29,16 @@
 
 namespace son8::cxx {
     // C++98
-    // -- (_many_:tuple,utility,...)
+    // -- (_many_:deque,tuple,utility,...)
     using std::swap;
+    // -- iterator
+    using std::back_insert_iterator;
+    using std::front_insert_iterator;
+    using std::insert_iterator;
+    // std::iterator - deprecated C++17
+    using std::reverse_iterator;
+    using std::advance;
+    using std::distance;
     // -- limits
     using std::float_denorm_style;
     using std::float_round_style;
@@ -56,7 +65,7 @@ namespace son8::cxx {
     using std::pair;
     using std::make_pair;
     // C++11
-    // -- (_many_:array,...)
+    // -- (_many_:array,iterator,string,string_view...)
     using std::begin;
     using std::end;
     // -- (_many_:array,tuple,variant...)
@@ -72,6 +81,10 @@ namespace son8::cxx {
     using std::array;
     // -- initializer_list
     using std::initializer_list;
+    // -- iterator
+    using std::move_iterator;
+    using std::next;
+    using std::prev;
     // -- memory
     using std::allocator_arg_t;
     using std::default_delete;
@@ -135,7 +148,7 @@ namespace son8::cxx {
     using std::move;
     using std::move_if_noexcept;
     // C++14
-    // -- (_many_:array,string,string_view,...)
+    // -- (_many_:array,iterator,string,string_view,...)
     using std::cbegin;
     using std::cend;
     using std::crbegin;
@@ -146,7 +159,7 @@ namespace son8::cxx {
     using std::exchange;
     using std::integer_sequence;
     // C++17
-    // -- (_many_:array,string,string_view,...)
+    // -- (_many_:array,iterator,string,string_view,...)
     using std::data;
     using std::empty;
     using std::size;

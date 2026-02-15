@@ -20,6 +20,11 @@ namespace son8::cxx {
     // -- iostream
     using std::cout;
     using std::endl;
+    // -- iterator<-core.hxx
+    using std::istream_iterator;
+    using std::istreambuf_iterator;
+    using std::ostream_iterator;
+    using std::ostreambuf_iterator;
     // C++11
     // string<-core.hxx
     using std::stoi;

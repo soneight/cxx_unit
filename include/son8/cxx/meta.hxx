@@ -9,6 +9,8 @@
 
 namespace son8::cxx {
     // C++98
+    // iterator<-core.hxx
+    using std::iterator_traits;
     // string<-core.hxx
     using std::char_traits;
     // C++11
