@@ -20,6 +20,9 @@ namespace son8::cxx {
     // using std::uncaught_exception; // depr C++17, rm C++20
     // using std::unexpected; // depr C++11, rm C++17
     // using std::unexpected_handler; // depr C++11, rm C++17
+    // -- new<-core.hxx
+    using std::bad_alloc;
+    using std::bad_array_new_length;
     // -- stdexcept
     using std::domain_error;
     using std::invalid_argument;
