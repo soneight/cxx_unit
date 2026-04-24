@@ -127,6 +127,9 @@ namespace son8::cxx {
 
     inline namespace literals {
         using namespace std::literals;
+        // C++14
+        // -- string
+        inline namespace string_literals { using namespace std::literals::string_literals; }
         // C++17
         // -- string_view
         inline namespace string_view_literals { using namespace std::literals::string_view_literals; }
