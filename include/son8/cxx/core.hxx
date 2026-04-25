@@ -10,7 +10,7 @@
 #include <iosfwd>
 #include <iterator> // TODO skipped entities
 #include <limits>
-#include <memory> // TODO skipped entities
+#include <memory>
 #include <new> // TODO skipped entities
 #include <optional>
 #include <tuple> // TODO skipped entities
@@ -26,7 +26,6 @@ namespace son8::cxx {
     // -- bitset
     using std::bitset;
     // -- iosfwd
-    using std::allocator;
     using std::basic_filebuf;
     using std::basic_fstream;
     using std::basic_ifstream;
@@ -85,6 +84,13 @@ namespace son8::cxx {
     using std::float_denorm_style;
     using std::float_round_style;
     using std::numeric_limits;
+    // -- memory
+    using std::allocator;
+    // ---- depr-rm?
+    // using std::auto_ptr; // depr C++11, rm C++17
+    // using std::get_temporary_buffer; // depr C++17, rm C++20
+    // using std::raw_storage_iterator; // depr C++17, rm C++20
+    // using std::return_temporary_buffer; // depr C++17, rm C++20
     // -- typeinfo
     using std::type_info;
     // -- utility
@@ -110,7 +116,20 @@ namespace son8::cxx {
     using std::next;
     using std::prev;
     // -- memory
+    using std::addressof;
+    using std::align;
+    using std::allocator_arg;
+    using std::allocator_arg_t;
+    using std::allocator_traits;
+    using std::default_delete;
+    using std::pointer_traits;
     using std::unique_ptr;
+    // ---- depr-rm?
+    // using std::declare_no_pointers; // rm C++23
+    // using std::declare_reachable; // rm C++23
+    // using std::get_pointer_safety; // rm C++23
+    // using std::undeclare_no_pointers; // rm C++23
+    // using std::undeclare_reachable; // rm C++23
     // -- tuple
     using std::make_tuple;
     using std::tuple;
@@ -126,6 +145,8 @@ namespace son8::cxx {
     using std::crend;
     using std::rbegin;
     using std::rend;
+    // -- memory
+    using std::make_unique;
     // -- utility
     using std::exchange;
     // C++17
@@ -137,6 +158,8 @@ namespace son8::cxx {
     using std::any;
     using std::any_cast;
     using std::make_any;
+    // -- memory
+    using std::destroy_at;
     // -- new
     using std::launder;
     // -- optional

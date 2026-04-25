@@ -6,7 +6,6 @@
 #include <exception>
 #include <stdexcept>
 #include <system_error>
-#include <variant>
 
 namespace son8::cxx {
     // C++03
@@ -52,6 +51,8 @@ namespace son8::cxx {
     using std::rethrow_exception;
     using std::rethrow_if_nested;
     using std::throw_with_nested;
+    // -- memory<-core.hxx
+    using std::bad_weak_ptr;
     // -- system_error
     using std::errc;
     using std::error_category;

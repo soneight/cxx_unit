@@ -8,6 +8,8 @@
 
 namespace son8::cxx {
     // C++11
+    // -- memory<-core.hxx
+    using std::uses_allocator;
     // -- ratio
     using std::atto;
     using std::centi;
@@ -134,6 +136,8 @@ namespace son8::cxx {
     // -- utility<-core
     using std::integer_sequence;
     // C++17
+    // -- memory<-core.hxx
+    using std::uses_allocator_v;
     // -- type_traits
     using std::bool_constant;
     using std::conjunction;
