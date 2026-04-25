@@ -13,10 +13,10 @@
 #include <memory>
 #include <new>
 #include <optional>
-#include <tuple> // TODO skipped entities
+#include <tuple>
 #include <typeindex>
 #include <typeinfo>
-#include <utility> // TODO skipped entities
+#include <utility>
 #include <variant>
 
 namespace son8::cxx {
@@ -148,14 +148,20 @@ namespace son8::cxx {
     // using std::undeclare_no_pointers; // rm C++23
     // using std::undeclare_reachable; // rm C++23
     // -- tuple
+    using std::forward_as_tuple;
     using std::make_tuple;
     using std::tuple;
+    using std::tuple_cat;
     using std::tie;
     // -- typeindex
     using std::type_index;
     // -- utility
+    using std::declval;
     using std::forward;
     using std::move;
+    using std::move_if_noexcept;
+    using std::piecewise_construct;
+    using std::piecewise_construct_t;
     // C++14
     // -- _many_
     using std::crbegin;
@@ -188,8 +194,17 @@ namespace son8::cxx {
     using std::nullopt;
     using std::nullopt_t;
     using std::optional;
+    // -- tuple
+    using std::apply;
+    using std::make_from_tuple;
     // -- utility
     using std::as_const;
+    using std::in_place;
+    using std::in_place_index;
+    using std::in_place_index_t;
+    using std::in_place_t;
+    using std::in_place_type;
+    using std::in_place_type_t;
     // -- variant
     using std::get_if;
     using std::holds_alternative;
@@ -197,6 +212,10 @@ namespace son8::cxx {
     using std::variant;
     using std::variant_npos;
     using std::visit;
+
+    // -- utility
+    // ---- depr-rm?
+    // namespace rel_ops { using namespace std::rel_ops; } // depr C++20
 
 } // namespace son8::cxx
 
