@@ -6,6 +6,7 @@
 #include <exception>
 #include <stdexcept>
 #include <system_error>
+#include <variant>
 
 namespace son8::cxx {
     // C++03
@@ -61,8 +62,14 @@ namespace son8::cxx {
     using std::system_category;
     using std::system_error;
     // C++17
+    // -- any<-core.hxx
+    using std::bad_any_cast;
     // -- exception
     using std::uncaught_exceptions;
+    // -- optional
+    using std::bad_optional_access;
+    // -- variant<-core.hxx
+    using std::bad_variant_access;
 } // namespace son8::cxx
 
 #endif//SON8_CXX_FLOW_HXX

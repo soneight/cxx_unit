@@ -151,6 +151,11 @@ namespace son8::cxx {
     using std::is_swappable_with;
     using std::negation;
     using std::void_t;
+    // -- variant<-core.hxx
+    using std::variant_alternative;
+    using std::variant_alternative_t;
+    using std::variant_size;
+    using std::variant_size_v;
 } // namespace son8::cxx
 
 #endif//SON8_CXX_META_HXX

@@ -2,21 +2,29 @@
 #define SON8_CXX_CORE_HXX
 
 // std
+#include <any>
 #include <array>
+#include <bitset>
 #include <functional> // TODO skipped entities
 #include <initializer_list>
 #include <iosfwd>
+#include <iterator> // TODO skipped entities
 #include <limits>
+#include <memory> // TODO skipped entities
 #include <new> // TODO skipped entities
+#include <optional>
 #include <tuple> // TODO skipped entities
 #include <typeindex>
 #include <typeinfo>
 #include <utility> // TODO skipped entities
+#include <variant>
 
 namespace son8::cxx {
     // C++03
     // -- _many_
     using std::swap;
+    // -- bitset
+    using std::bitset;
     // -- iosfwd
     using std::allocator;
     using std::basic_filebuf;
@@ -67,6 +75,12 @@ namespace son8::cxx {
     // using std::ostrstream; // depr C++03, rm C++26
     // using std::strstream; // depr C++03, rm C++26
     // using std::strstreambuf; // depr C++03, rm C++26
+    // -- iterator
+    using std::advance;
+    using std::distance;
+    using std::iterator_traits;
+    // ---- depr-rm?
+    // using std::iterator; // depr C++17
     // -- limits
     using std::float_denorm_style;
     using std::float_round_style;
@@ -92,6 +106,11 @@ namespace son8::cxx {
     // -- iosfwd
     using std::u16streampos;
     using std::u32streampos;
+    // -- iterator
+    using std::next;
+    using std::prev;
+    // -- memory
+    using std::unique_ptr;
     // -- tuple
     using std::make_tuple;
     using std::tuple;
@@ -114,10 +133,26 @@ namespace son8::cxx {
     using std::data;
     using std::empty;
     using std::size;
+    // -- any
+    using std::any;
+    using std::any_cast;
+    using std::make_any;
     // -- new
     using std::launder;
+    // -- optional
+    using std::make_optional;
+    using std::nullopt;
+    using std::nullopt_t;
+    using std::optional;
     // -- utility
     using std::as_const;
+    // -- variant
+    using std::get_if;
+    using std::holds_alternative;
+    using std::monostate;
+    using std::variant;
+    using std::variant_npos;
+    using std::visit;
 
 } // namespace son8::cxx
 
