@@ -76,8 +76,20 @@ namespace son8::cxx {
     // using std::strstreambuf; // depr C++03, rm C++26
     // -- iterator
     using std::advance;
+    using std::back_insert_iterator;
+    using std::back_inserter;
+    using std::bidirectional_iterator_tag;
     using std::distance;
+    using std::forward_iterator_tag;
+    using std::front_insert_iterator;
+    using std::front_inserter;
+    using std::insert_iterator;
+    using std::inserter;
     using std::iterator_traits;
+    using std::input_iterator_tag;
+    using std::output_iterator_tag;
+    using std::random_access_iterator_tag;
+    using std::reverse_iterator;
     // ---- depr-rm?
     // using std::iterator; // depr C++17
     // -- limits
@@ -113,6 +125,8 @@ namespace son8::cxx {
     using std::u16streampos;
     using std::u32streampos;
     // -- iterator
+    using std::make_move_iterator;
+    using std::move_iterator;
     using std::next;
     using std::prev;
     // -- memory
@@ -146,6 +160,7 @@ namespace son8::cxx {
     using std::rbegin;
     using std::rend;
     // -- memory
+    using std::make_reverse_iterator;
     using std::make_unique;
     // -- utility
     using std::exchange;
