@@ -24,6 +24,8 @@ namespace son8::cxx {
     // -- new<-core.hxx
     using std::bad_alloc;
     using std::bad_array_new_length;
+    using std::new_handler;
+    using std::set_new_handler;
     // -- stdexcept
     using std::domain_error;
     using std::invalid_argument;
@@ -53,6 +55,8 @@ namespace son8::cxx {
     using std::throw_with_nested;
     // -- memory<-core.hxx
     using std::bad_weak_ptr;
+    // -- new<-core.hxx
+    using std::get_new_handler;
     // -- system_error
     using std::errc;
     using std::error_category;

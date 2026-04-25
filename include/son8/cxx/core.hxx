@@ -8,10 +8,10 @@
 #include <functional> // TODO skipped entities
 #include <initializer_list>
 #include <iosfwd>
-#include <iterator> // TODO skipped entities
+#include <iterator>
 #include <limits>
 #include <memory>
-#include <new> // TODO skipped entities
+#include <new>
 #include <optional>
 #include <tuple> // TODO skipped entities
 #include <typeindex>
@@ -103,6 +103,9 @@ namespace son8::cxx {
     // using std::get_temporary_buffer; // depr C++17, rm C++20
     // using std::raw_storage_iterator; // depr C++17, rm C++20
     // using std::return_temporary_buffer; // depr C++17, rm C++20
+    // -- new
+    using std::nothrow;
+    using std::nothrow_t;
     // -- typeinfo
     using std::type_info;
     // -- utility
@@ -176,6 +179,9 @@ namespace son8::cxx {
     // -- memory
     using std::destroy_at;
     // -- new
+    using std::align_val_t;
+    using std::hardware_constructive_interference_size;
+    using std::hardware_destructive_interference_size;
     using std::launder;
     // -- optional
     using std::make_optional;
