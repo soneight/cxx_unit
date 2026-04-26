@@ -181,6 +181,10 @@ namespace son8::cxx {
     using std::sample;
     // -- execution
     using std::is_execution_policy;
+    // -- functional<-core.hxx
+    using std::default_searcher;
+    using std::boyer_moore_horspool_searcher;
+    using std::boyer_moore_searcher;
     // -- memory<-core.hxx
     using std::destroy;
     using std::destroy_n;

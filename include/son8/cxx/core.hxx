@@ -25,6 +25,49 @@ namespace son8::cxx {
     using std::swap;
     // -- bitset
     using std::bitset;
+    // -- functional
+    using std::bit_and;
+    using std::bit_or;
+    using std::bit_xor;
+    using std::divides;
+    using std::equal_to;
+    using std::greater;
+    using std::greater_equal;
+    using std::less;
+    using std::less_equal;
+    using std::logical_and;
+    using std::logical_not;
+    using std::logical_or;
+    using std::minus;
+    using std::modulus;
+    using std::multiplies;
+    using std::negate;
+    using std::not_equal_to;
+    using std::plus;
+    // ---- depr-rm?
+    // using std::bind1st; // depr C++11, rm C++17
+    // using std::bind2nd; // depr C++11, rm C++17
+    // using std::binder1st; // depr C++11, rm C++17
+    // using std::binder2nd; // depr C++11, rm C++17
+    // using std::binary_function; // depr C++11, rm C++17
+    // using std::binary_negate; // depr C++17, rm C++20
+    // using std::const_mem_fun_t; // depr C++11, rm C++17
+    // using std::const_mem_fun_ref_t; // depr C++11, rm C++17
+    // using std::const_mem_fun1_t; // depr C++11, rm C++17
+    // using std::const_mem_fun1_ref_t; // depr C++11, rm C++17
+    // using std::mem_fun; // depr C++11, rm C++17
+    // using std::mem_fun_ref; // depr C++11, rm C++17
+    // using std::mem_fun_t; // depr C++11, rm C++17
+    // using std::mem_fun_ref_t; // depr C++11, rm C++17
+    // using std::mem_fun1_t; // depr C++11, rm C++17
+    // using std::mem_fun1_ref_t; // depr C++11, rm C++17
+    // using std::not1; // depr C++17, rm C++20
+    // using std::not2; // depr C++17, rm C++20
+    // using std::pointer_to_binary_function; // depr C++11, rm C++17
+    // using std::pointer_to_unary_function; // depr C++11, rm C++17
+    // using std::ptr_fun; // depr C++11, rm C++17
+    // using std::unary_function; // depr C++11, rm C++17
+    // using std::unary_negate; // depr C++17, rm C++20
     // -- iosfwd
     using std::basic_filebuf;
     using std::basic_fstream;
@@ -122,6 +165,13 @@ namespace son8::cxx {
     using std::tuple_size;
     // -- array
     using std::array;
+    // -- functional
+    using std::bind;
+    using std::cref;
+    using std::function;
+    using std::mem_fn;
+    using std::ref;
+    using std::reference_wrapper;
     // -- initializer_list
     using std::initializer_list;
     // -- iosfwd
@@ -168,6 +218,8 @@ namespace son8::cxx {
     using std::crend;
     using std::rbegin;
     using std::rend;
+    // -- functional
+    using std::bit_not;
     // -- memory
     using std::make_reverse_iterator;
     using std::make_unique;
@@ -182,6 +234,9 @@ namespace son8::cxx {
     using std::any;
     using std::any_cast;
     using std::make_any;
+    // -- functional
+    using std::invoke;
+    using std::not_fn;
     // -- memory
     using std::destroy_at;
     // -- new
@@ -212,6 +267,12 @@ namespace son8::cxx {
     using std::variant;
     using std::variant_npos;
     using std::visit;
+
+    namespace placeholders {
+        // C++03
+        // -- functional
+        using namespace std::placeholders;
+    }
 
     // -- utility
     // ---- depr-rm?

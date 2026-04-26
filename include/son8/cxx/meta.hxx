@@ -8,6 +8,11 @@
 
 namespace son8::cxx {
     // C++11
+    // -- functional<-core.hxx
+    using std::is_bind_expression;
+    using std::is_bind_expression_v;
+    using std::is_placeholder;
+    using std::is_placeholder_v;
     // -- memory<-core.hxx
     using std::uses_allocator;
     // -- ratio

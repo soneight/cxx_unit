@@ -53,6 +53,8 @@ namespace son8::cxx {
     using std::rethrow_exception;
     using std::rethrow_if_nested;
     using std::throw_with_nested;
+    // -- functional<-core.hxx
+    using std::bad_function_call;
     // -- memory<-core.hxx
     using std::bad_weak_ptr;
     // -- new<-core.hxx
