@@ -5,7 +5,8 @@
 #include <any>
 #include <array>
 #include <bitset>
-#include <functional> // TODO skipped entities
+#include <chrono>
+#include <functional>
 #include <initializer_list>
 #include <iosfwd>
 #include <iterator>
@@ -268,11 +269,37 @@ namespace son8::cxx {
     using std::variant_npos;
     using std::visit;
 
+    inline namespace literals {
+        using namespace std::literals;
+        // C++14
+        // -- chrono
+        inline namespace chrono_literals { using namespace std::literals::chrono_literals; }
+    }
+
+    namespace chrono {
+        // C++11
+        // -- chrono
+        using std::chrono::duration;
+        using std::chrono::duration_cast;
+        using std::chrono::duration_values;
+        using std::chrono::high_resolution_clock;
+        using std::chrono::hours;
+        using std::chrono::microseconds;
+        using std::chrono::milliseconds;
+        using std::chrono::minutes;
+        using std::chrono::nanoseconds;
+        using std::chrono::seconds;
+        using std::chrono::steady_clock;
+        using std::chrono::system_clock;
+        using std::chrono::time_point;
+        using std::chrono::time_point_cast;
+    } // namespace son8::cxx::chrono
+
     namespace placeholders {
         // C++03
         // -- functional
         using namespace std::placeholders;
-    }
+    } // namespace son8::cxx::placeholders
 
     // -- utility
     // ---- depr-rm?

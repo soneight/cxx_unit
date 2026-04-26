@@ -10,9 +10,7 @@ namespace son8::cxx {
     // C++11
     // -- functional<-core.hxx
     using std::is_bind_expression;
-    using std::is_bind_expression_v;
     using std::is_placeholder;
-    using std::is_placeholder_v;
     // -- memory<-core.hxx
     using std::uses_allocator;
     // -- ratio
@@ -141,6 +139,9 @@ namespace son8::cxx {
     // -- utility<-core
     using std::integer_sequence;
     // C++17
+    // -- functional<-core.hxx
+    using std::is_bind_expression_v;
+    using std::is_placeholder_v;
     // -- memory<-core.hxx
     using std::uses_allocator_v;
     // -- type_traits
@@ -165,6 +166,16 @@ namespace son8::cxx {
     using std::variant_alternative_t;
     using std::variant_size;
     using std::variant_size_v;
+
+    namespace chrono {
+        // C++11
+        // -- chrono
+        using std::chrono::treat_as_floating_point;
+        // C++17
+        // -- chrono
+        using std::chrono::treat_as_floating_point_v;
+    }
+
 } // namespace son8::cxx
 
 #endif//SON8_CXX_META_HXX
