@@ -88,6 +88,12 @@ namespace son8::cxx {
     using std::atomic_uchar;
     using std::atomic_wchar_t;
     using std::memory_order;
+    using std::memory_order_acq_rel;
+    using std::memory_order_acquire;
+    using std::memory_order_consume;
+    using std::memory_order_relaxed;
+    using std::memory_order_release;
+    using std::memory_order_seq_cst;
     // ---- depr-rm?
     // using std::atomic_init; // deprecated C++20
     // using std::kill_dependency; // deprecated C++26

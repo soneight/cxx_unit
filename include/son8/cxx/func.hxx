@@ -75,7 +75,6 @@ namespace son8::cxx {
     using std::sort_heap;
     using std::stable_partition;
     using std::stable_sort;
-    using std::swap;
     using std::swap_ranges;
     using std::transform;
     using std::unique;
@@ -123,7 +122,6 @@ namespace son8::cxx {
     using std::is_sorted_until;
     using std::minmax;
     using std::minmax_element;
-    using std::move;
     using std::move_backward;
     using std::none_of;
     using std::partition_copy;
@@ -181,6 +179,7 @@ namespace son8::cxx {
     using std::sample;
     // -- execution
     using std::is_execution_policy;
+    using std::is_execution_policy_v;
     // -- functional<-core.hxx
     using std::default_searcher;
     using std::boyer_moore_horspool_searcher;
@@ -205,7 +204,6 @@ namespace son8::cxx {
     using std::transform_reduce;
 
     inline namespace literals {
-        using namespace std::literals;
         // C++14
         inline namespace complex_literals { using namespace std::literals::complex_literals; }
     }

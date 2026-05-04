@@ -5,6 +5,7 @@
 // std
 #include <ratio>
 #include <type_traits>
+#include <utility>
 
 namespace son8::cxx {
     // C++11
@@ -137,7 +138,10 @@ namespace son8::cxx {
     // -- type_traits
     using std::is_final;
     // -- utility<-core
+    using std::index_sequence;
     using std::integer_sequence;
+    using std::make_index_sequence;
+    using std::make_integer_sequence;
     // C++17
     // -- functional<-core.hxx
     using std::is_bind_expression_v;

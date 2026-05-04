@@ -107,6 +107,7 @@ namespace son8::cxx {
     using std::stof;
     using std::stoi;
     using std::stol;
+    using std::stold;
     using std::stoll;
     using std::stoul;
     using std::stoull;
@@ -129,7 +130,6 @@ namespace son8::cxx {
     using std::wstring_view;
 
     inline namespace literals {
-        using namespace std::literals;
         // C++14
         // -- string
         inline namespace string_literals { using namespace std::literals::string_literals; }
@@ -148,6 +148,12 @@ namespace son8::cxx {
 
     namespace pmr {
         // C++17
+        // -- regex
+        using std::pmr::cmatch;
+        using std::pmr::match_results;
+        using std::pmr::smatch;
+        using std::pmr::wcmatch;
+        using std::pmr::wsmatch;
         // -- string
         using std::pmr::basic_string;
         using std::pmr::string;
@@ -155,7 +161,6 @@ namespace son8::cxx {
         using std::pmr::u32string;
         using std::pmr::wstring;
     }
-
 
 } // namespace son8::cxx
 
