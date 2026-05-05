@@ -1,6 +1,8 @@
 #ifndef SON8_CXX_META_HXX
 #define SON8_CXX_META_HXX
-
+/*
+    Meta C++ compile-time features
+*/
 #include <son8/cxx/core.hxx>
 // std
 #include <ratio>

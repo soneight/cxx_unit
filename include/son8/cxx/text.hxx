@@ -1,6 +1,8 @@
 #ifndef SON8_CXX_TEXT_HXX
 #define SON8_CXX_TEXT_HXX
-
+/*
+    Text C++ string processing features
+*/
 #include <son8/cxx/core.hxx>
 // std
 #include <charconv>
@@ -8,7 +10,7 @@
 #include <regex>
 #include <string>
 #include <string_view>
-// depr-rm?
+// -- depr-rm?
 // #include <codecvt> // depr C++17, rm C++26
 
 namespace son8::cxx {

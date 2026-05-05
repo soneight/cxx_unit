@@ -1,6 +1,8 @@
 #ifndef SON8_CXX_DATA_HXX
 #define SON8_CXX_DATA_HXX
-
+/*
+    Data (Structures) C++ container features
+*/
 #include <son8/cxx/core.hxx>
 // std
 #include <deque>

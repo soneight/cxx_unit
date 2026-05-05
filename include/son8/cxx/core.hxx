@@ -1,6 +1,8 @@
 #ifndef SON8_CXX_CORE_HXX
 #define SON8_CXX_CORE_HXX
-
+/*
+    Core C++ features
+*/
 // std
 #include <any>
 #include <array>

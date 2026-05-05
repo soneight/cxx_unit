@@ -1,6 +1,8 @@
 #ifndef SON8_CXX_FILE_HXX
 #define SON8_CXX_FILE_HXX
-
+/*
+    File C++ input and output features
+*/
 #include <son8/cxx/core.hxx>
 // std
 #include <filesystem>
@@ -11,6 +13,9 @@
 #include <istream>
 #include <ostream>
 #include <sstream>
+#include <streambuf>
+// -- depr-rm?
+// #include <strstream> // depr C++03, rm C++26
 
 namespace son8::cxx {
     // C++03
@@ -112,6 +117,10 @@ namespace son8::cxx {
     using std::wostringstream;
     using std::wstringbuf;
     using std::wstringstream;
+    // -- streambuf
+    using std::basic_streambuf;
+    using std::streambuf;
+    using std::wstreambuf;
     // C++11
     // -- ios
     using std::defaultfloat;

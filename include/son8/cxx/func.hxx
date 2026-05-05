@@ -1,6 +1,8 @@
 #ifndef SON8_CXX_FUNC_HXX
 #define SON8_CXX_FUNC_HXX
-
+/*
+    Func C++ algorithm and math features
+*/
 #include <son8/cxx/core.hxx>
 // std
 #include <algorithm>
@@ -14,7 +16,7 @@
 // \ need to use std directly or use includes from c_header interface library
 
 namespace son8::cxx {
-    // C++98
+    // C++03
     // -- algorithm
     using std::adjacent_find;
     using std::binary_search;

@@ -1,6 +1,8 @@
 #ifndef SON8_CXX_FLOW_HXX
 #define SON8_CXX_FLOW_HXX
-
+/*
+    Flow (Control) C++ error handling features
+*/
 #include <son8/cxx/core.hxx>
 // std
 #include <exception>

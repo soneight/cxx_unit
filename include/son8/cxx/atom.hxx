@@ -1,6 +1,8 @@
 #ifndef SON8_CXX_ATOM_HXX
 #define SON8_CXX_ATOM_HXX
-
+/*
+    Atom C++ multithreading features
+*/
 #include <son8/cxx/core.hxx>
 // std
 #include <atomic>
