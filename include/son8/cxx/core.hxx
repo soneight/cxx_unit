@@ -1,6 +1,8 @@
 #ifndef SON8_CXX_CORE_HXX
 #define SON8_CXX_CORE_HXX
-
+/*
+    Core C++ features
+*/
 // std
 #include <any>
 #include <array>
@@ -231,6 +233,8 @@ namespace son8::cxx {
     using std::data;
     using std::empty;
     using std::size;
+    using std::tuple_element_t;
+    using std::tuple_size_v;
     // -- any
     using std::any;
     using std::any_cast;

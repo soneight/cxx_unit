@@ -1,6 +1,8 @@
 #ifndef SON8_CXX_FLOW_HXX
 #define SON8_CXX_FLOW_HXX
-
+/*
+    Flow (Control) C++ error handling features
+*/
 #include <son8/cxx/core.hxx>
 // std
 #include <exception>
@@ -40,10 +42,6 @@ namespace son8::cxx {
     using std::bad_cast;
     using std::bad_typeid;
     // C++11
-    // -- _many_
-    using std::is_error_code_enum; // system_error: ios
-    using std::make_error_code; // system_error: ios
-    using std::make_error_condition; // system_error: ios
     // -- exception
     using std::current_exception;
     using std::exception_ptr;
@@ -66,6 +64,9 @@ namespace son8::cxx {
     using std::error_condition;
     using std::generic_category;
     using std::is_error_condition_enum;
+    using std::is_error_code_enum;
+    using std::make_error_code;
+    using std::make_error_condition;
     using std::system_category;
     using std::system_error;
     // C++17
@@ -75,8 +76,12 @@ namespace son8::cxx {
     using std::uncaught_exceptions;
     // -- optional
     using std::bad_optional_access;
+    // -- system_error
+    using std::is_error_code_enum_v;
+    using std::is_error_condition_enum_v;
     // -- variant<-core.hxx
     using std::bad_variant_access;
+
 } // namespace son8::cxx
 
 #endif//SON8_CXX_FLOW_HXX

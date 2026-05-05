@@ -1,6 +1,8 @@
 #ifndef SON8_CXX_FILE_HXX
 #define SON8_CXX_FILE_HXX
-
+/*
+    File C++ input and output features
+*/
 #include <son8/cxx/core.hxx>
 // std
 #include <filesystem>
@@ -11,7 +13,9 @@
 #include <istream>
 #include <ostream>
 #include <sstream>
-#include <system_error> // is_error_code_enum, make_error_(code|condition) - maybe move system_error to core?
+#include <streambuf>
+// -- depr-rm?
+// #include <strstream> // depr C++03, rm C++26
 
 namespace son8::cxx {
     // C++03
@@ -113,14 +117,15 @@ namespace son8::cxx {
     using std::wostringstream;
     using std::wstringbuf;
     using std::wstringstream;
+    // -- streambuf
+    using std::basic_streambuf;
+    using std::streambuf;
+    using std::wstreambuf;
     // C++11
     // -- ios
     using std::defaultfloat;
     using std::hexfloat;
     using std::io_errc;
-    using std::is_error_code_enum; // systen_error
-    using std::make_error_code; // system_error
-    using std::make_error_condition; // system_error
 
     namespace filesystem {
         // C++17
@@ -140,6 +145,7 @@ namespace son8::cxx {
         using std::filesystem::directory_entry;
         using std::filesystem::directory_iterator;
         using std::filesystem::directory_options;
+        using std::filesystem::hash_value;
         using std::filesystem::file_size;
         using std::filesystem::file_status;
         using std::filesystem::file_time_type;
