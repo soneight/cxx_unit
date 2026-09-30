@@ -21,6 +21,22 @@ Entities are split into eight units:
 ## Install
 > TODO: cmake install target only on `v1.0.0` release
 
+### Fetch
+
+```cmake
+if( NOT TARGET son8__cxx_unit )
+    include( FetchContent )
+    message( STATUS "${SON8_APP}: FetchContent `soneight/cxx_unit`" )
+    fetchcontent_declare(
+        son8__cxx_unit
+        GIT_REPOSITORY https://github.com/soneight/cxx_unit.git
+        GIT_TAG        8ebb9164b12ee773c1810bd65e21ee029378768d # v0.1.1
+    )
+    fetchcontent_makeavailable( son8__cxx_unit )
+endif( )
+message( STATUS "${SON8_APP}: target `son8__cxx_unit` found" )
+```
+
 ## [CONTRIBUTING](./CONTRIBUTING.md)
 > Project Contribution Rules
 
