@@ -7,7 +7,7 @@
 // std
 #include <algorithm>
 #include <complex>
-#include <execution> // IWYU pragma: keep
+#include <execution>
 #include <numeric>
 #include <random>
 #include <valarray>
@@ -82,8 +82,9 @@ namespace son8::cxx {
     using std::unique;
     using std::unique_copy;
     using std::upper_bound;
-    // ---- depr-rm?
-    // using std::random_shuffle; // depr C++14, rm C++17
+#if 0 // ---- depr-rm?
+    using std::random_shuffle; // depr C++14, rm C++17
+#endif
     // -- complex
     using std::arg;
     using std::complex;

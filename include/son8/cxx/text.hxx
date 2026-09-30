@@ -10,9 +10,9 @@
 #include <regex>
 #include <string>
 #include <string_view>
-// -- depr-rm?
-// #include <codecvt> // depr C++17, rm C++26
-
+#if 0 // -- depr-rm?
+#include <codecvt> // depr C++17, rm C++26
+#endif
 namespace son8::cxx {
     // C++03
     // -- locale
@@ -65,16 +65,18 @@ namespace son8::cxx {
     using std::wstring;
     // C++11
     // -- codecvt
-    // ---- depr-rm?
-    // using std::codecvt_mode; // depr C++17, rm C++26
-    // using std::codecvt_utf16; // depr C++17, rm C++26
-    // using std::codecvt_utf8; // depr C++17, rm C++26
-    // using std::codecvt_utf8_utf16; // depr C++17, rm C++26
+#if 0 // ---- depr-rm?
+    using std::codecvt_mode; // depr C++17, rm C++26
+    using std::codecvt_utf16; // depr C++17, rm C++26
+    using std::codecvt_utf8; // depr C++17, rm C++26
+    using std::codecvt_utf8_utf16; // depr C++17, rm C++26
+#endif
     // -- locale
     using std::isblank;
-    // ---- depr-rm?
-    // using std::wbuffer_convert; // depr C++17, rm C++26
-    // using std::wstring_convert; // depr C++17, rm C++26
+#if 0 // ---- depr-rm?
+    using std::wbuffer_convert; // depr C++17, rm C++26
+    using std::wstring_convert; // depr C++17, rm C++26
+#endif
     // -- regex
     using std::basic_regex;
     using std::cmatch;

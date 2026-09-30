@@ -129,13 +129,14 @@ namespace son8::cxx {
     using std::remove_reference;
     using std::remove_volatile;
     using std::underlying_type;
-    // ---- depr-rm?
-    // using std::aligned_storage; // depr C++23
-    // using std::aligned_union; // depr C++23
-    // using std::is_literal_type; // depr C++17, rm C++20
-    // using std::is_pod; // depr C++20
-    // using std::is_trivial; // depr C++26
-    // using std::result_of; // rm C++20
+#if 0 // ---- depr-rm?
+    using std::aligned_storage; // depr C++23
+    using std::aligned_union; // depr C++23
+    using std::is_literal_type; // depr C++17, rm C++20
+    using std::is_pod; // depr C++20
+    using std::is_trivial; // depr C++26
+    using std::result_of; // rm C++20
+#endif
     // C++14
     // -- type_traits
     using std::is_final;
@@ -264,12 +265,14 @@ namespace son8::cxx {
     using std::underlying_type_t;
     using std::void_t;
     // ---- depr-rm?
-    // using std::aligned_storage_t; // depr C++23
-    // using std::aligned_union_t; // depr C++23
-    // using std::is_literal_type_v; // depr C++17, rm C++20
-    // using std::is_pod_v; // depr C++20
-    // using std::is_trivial_v; // depr C++26
-    // using std::result_of_t; // rm C++20
+#if 0
+    using std::aligned_storage_t; // depr C++23
+    using std::aligned_union_t; // depr C++23
+    using std::is_literal_type_v; // depr C++17, rm C++20
+    using std::is_pod_v; // depr C++20
+    using std::is_trivial_v; // depr C++26
+    using std::result_of_t; // rm C++20
+#endif
     // -- variant<-core.hxx
     using std::variant_alternative;
     using std::variant_alternative_t;
@@ -278,10 +281,10 @@ namespace son8::cxx {
 
     namespace chrono {
         // C++11
-        // -- chrono
+        // -- chrono<-core.hxx
         using std::chrono::treat_as_floating_point;
         // C++17
-        // -- chrono
+        // -- chrono<-core.hxx
         using std::chrono::treat_as_floating_point_v;
     }
 

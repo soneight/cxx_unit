@@ -49,39 +49,41 @@ namespace son8::cxx {
     using std::unordered_set;
     using std::unordered_multiset;
 
-    namespace pmr {
-        // C++17
-        // -- deque
-        using std::pmr::deque;
-        // -- forward_list
-        using std::pmr::forward_list;
-        // -- list
-        using std::pmr::list;
-        // -- memory_resource
-        using std::pmr::get_default_resource;
-        using std::pmr::memory_resource;
-        using std::pmr::monotonic_buffer_resource;
-        using std::pmr::new_delete_resource;
-        using std::pmr::null_memory_resource;
-        using std::pmr::polymorphic_allocator;
-        using std::pmr::pool_options;
-        using std::pmr::set_default_resource;
-        using std::pmr::synchronized_pool_resource;
-        using std::pmr::unsynchronized_pool_resource;
-        // -- map
-        using std::pmr::map;
-        // -- set
-        using std::pmr::set;
-        // -- unordered_map
-        using std::pmr::unordered_map;
-        using std::pmr::unordered_multimap;
-        // -- unordered_set
-        using std::pmr::unordered_set;
-        using std::pmr::unordered_multiset;
-        // -- vector
-        using std::pmr::vector;
-    }
 } // namespace son8::cxx
+
+namespace son8::cxx::pmr {
+    // C++17
+    // -- deque
+    using std::pmr::deque;
+    // -- forward_list
+    using std::pmr::forward_list;
+    // -- list
+    using std::pmr::list;
+    // -- memory_resource
+    using std::pmr::get_default_resource;
+    using std::pmr::memory_resource;
+    using std::pmr::monotonic_buffer_resource;
+    using std::pmr::new_delete_resource;
+    using std::pmr::null_memory_resource;
+    using std::pmr::polymorphic_allocator;
+    using std::pmr::pool_options;
+    using std::pmr::set_default_resource;
+    using std::pmr::synchronized_pool_resource;
+    using std::pmr::unsynchronized_pool_resource;
+    // -- map
+    using std::pmr::map;
+    // -- set
+    using std::pmr::set;
+    // -- unordered_map
+    using std::pmr::unordered_map;
+    using std::pmr::unordered_multimap;
+    // -- unordered_set
+    using std::pmr::unordered_set;
+    using std::pmr::unordered_multiset;
+    // -- vector
+    using std::pmr::vector;
+
+} // namespace son8::cxx::pmr
 
 #endif//SON8_CXX_DATA_HXX
 

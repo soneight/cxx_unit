@@ -3,7 +3,7 @@
 /*
     Core: Structural andor Core Features
 */
-// std
+
 #include <any>
 #include <array>
 #include <bitset>
@@ -47,30 +47,31 @@ namespace son8::cxx {
     using std::negate;
     using std::not_equal_to;
     using std::plus;
-    // ---- depr-rm?
-    // using std::bind1st; // depr C++11, rm C++17
-    // using std::bind2nd; // depr C++11, rm C++17
-    // using std::binder1st; // depr C++11, rm C++17
-    // using std::binder2nd; // depr C++11, rm C++17
-    // using std::binary_function; // depr C++11, rm C++17
-    // using std::binary_negate; // depr C++17, rm C++20
-    // using std::const_mem_fun_t; // depr C++11, rm C++17
-    // using std::const_mem_fun_ref_t; // depr C++11, rm C++17
-    // using std::const_mem_fun1_t; // depr C++11, rm C++17
-    // using std::const_mem_fun1_ref_t; // depr C++11, rm C++17
-    // using std::mem_fun; // depr C++11, rm C++17
-    // using std::mem_fun_ref; // depr C++11, rm C++17
-    // using std::mem_fun_t; // depr C++11, rm C++17
-    // using std::mem_fun_ref_t; // depr C++11, rm C++17
-    // using std::mem_fun1_t; // depr C++11, rm C++17
-    // using std::mem_fun1_ref_t; // depr C++11, rm C++17
-    // using std::not1; // depr C++17, rm C++20
-    // using std::not2; // depr C++17, rm C++20
-    // using std::pointer_to_binary_function; // depr C++11, rm C++17
-    // using std::pointer_to_unary_function; // depr C++11, rm C++17
-    // using std::ptr_fun; // depr C++11, rm C++17
-    // using std::unary_function; // depr C++11, rm C++17
-    // using std::unary_negate; // depr C++17, rm C++20
+#if 0 // ---- depr-rm?
+    using std::bind1st; // depr C++11, rm C++17
+    using std::bind2nd; // depr C++11, rm C++17
+    using std::binder1st; // depr C++11, rm C++17
+    using std::binder2nd; // depr C++11, rm C++17
+    using std::binary_function; // depr C++11, rm C++17
+    using std::binary_negate; // depr C++17, rm C++20
+    using std::const_mem_fun_t; // depr C++11, rm C++17
+    using std::const_mem_fun_ref_t; // depr C++11, rm C++17
+    using std::const_mem_fun1_t; // depr C++11, rm C++17
+    using std::const_mem_fun1_ref_t; // depr C++11, rm C++17
+    using std::mem_fun; // depr C++11, rm C++17
+    using std::mem_fun_ref; // depr C++11, rm C++17
+    using std::mem_fun_t; // depr C++11, rm C++17
+    using std::mem_fun_ref_t; // depr C++11, rm C++17
+    using std::mem_fun1_t; // depr C++11, rm C++17
+    using std::mem_fun1_ref_t; // depr C++11, rm C++17
+    using std::not1; // depr C++17, rm C++20
+    using std::not2; // depr C++17, rm C++20
+    using std::pointer_to_binary_function; // depr C++11, rm C++17
+    using std::pointer_to_unary_function; // depr C++11, rm C++17
+    using std::ptr_fun; // depr C++11, rm C++17
+    using std::unary_function; // depr C++11, rm C++17
+    using std::unary_negate; // depr C++17, rm C++20
+#endif
     // -- iosfwd
     using std::basic_filebuf;
     using std::basic_fstream;
@@ -115,11 +116,12 @@ namespace son8::cxx {
     using std::wstreampos;
     using std::wstringbuf;
     using std::wstringstream;
-    // ---- depr-rm?
-    // using std::istrstream; // depr C++03, rm C++26
-    // using std::ostrstream; // depr C++03, rm C++26
-    // using std::strstream; // depr C++03, rm C++26
-    // using std::strstreambuf; // depr C++03, rm C++26
+#if 0 // ---- depr-rm?
+    using std::istrstream; // depr C++03, rm C++26
+    using std::ostrstream; // depr C++03, rm C++26
+    using std::strstream; // depr C++03, rm C++26
+    using std::strstreambuf; // depr C++03, rm C++26
+#endif
     // -- iterator
     using std::advance;
     using std::back_insert_iterator;
@@ -136,19 +138,21 @@ namespace son8::cxx {
     using std::output_iterator_tag;
     using std::random_access_iterator_tag;
     using std::reverse_iterator;
-    // ---- depr-rm?
-    // using std::iterator; // depr C++17
+#if 0 // ---- depr-rm?
+    using std::iterator; // depr C++17
+#endif
     // -- limits
     using std::float_denorm_style;
     using std::float_round_style;
     using std::numeric_limits;
     // -- memory
     using std::allocator;
-    // ---- depr-rm?
+#if 0 // ---- depr-rm?
     // using std::auto_ptr; // depr C++11, rm C++17
     // using std::get_temporary_buffer; // depr C++17, rm C++20
     // using std::raw_storage_iterator; // depr C++17, rm C++20
     // using std::return_temporary_buffer; // depr C++17, rm C++20
+#endif
     // -- new
     using std::nothrow;
     using std::nothrow_t;
@@ -194,12 +198,14 @@ namespace son8::cxx {
     using std::default_delete;
     using std::pointer_traits;
     using std::unique_ptr;
-    // ---- depr-rm?
-    // using std::declare_no_pointers; // rm C++23
-    // using std::declare_reachable; // rm C++23
-    // using std::get_pointer_safety; // rm C++23
-    // using std::undeclare_no_pointers; // rm C++23
-    // using std::undeclare_reachable; // rm C++23
+
+#if 0 // ---- depr-rm?
+    using std::declare_no_pointers; // rm C++23
+    using std::declare_reachable; // rm C++23
+    using std::get_pointer_safety; // rm C++23
+    using std::undeclare_no_pointers; // rm C++23
+    using std::undeclare_reachable; // rm C++23
+#endif
     // -- tuple
     using std::forward_as_tuple;
     using std::make_tuple;
@@ -306,8 +312,9 @@ namespace son8::cxx {
     } // namespace son8::cxx::placeholders
 
     // -- utility
-    // ---- depr-rm?
-    // namespace rel_ops { using namespace std::rel_ops; } // depr C++20
+#if 0 // ---- depr-rm?
+    namespace rel_ops { using namespace std::rel_ops; } // depr C++20
+#endif
 
 } // namespace son8::cxx
 

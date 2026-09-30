@@ -96,9 +96,10 @@ namespace son8::cxx {
     using std::memory_order_relaxed;
     using std::memory_order_release;
     using std::memory_order_seq_cst;
-    // ---- depr-rm?
-    // using std::atomic_init; // deprecated C++20
-    // using std::kill_dependency; // deprecated C++26
+#if 0 // ---- depr-rm?
+    using std::atomic_init; // depr C++20
+    using std::kill_dependency; // depr C++26
+#endif
     // -- condition_variable
     using std::condition_variable;
     using std::condition_variable_any;

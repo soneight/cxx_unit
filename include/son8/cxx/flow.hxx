@@ -17,12 +17,13 @@ namespace son8::cxx {
     using std::set_terminate;
     using std::terminate;
     using std::terminate_handler;
-    // ---- depr-rm?
-    // using std::get_unexpected; // depr C++11, rm C++17
-    // using std::set_unexpected; // depr C++11, rm C++17
-    // using std::uncaught_exception; // depr C++17, rm C++20
-    // using std::unexpected; // depr C++11, rm C++17
-    // using std::unexpected_handler; // depr C++11, rm C++17
+#if 0 // ---- depr-rm?
+    using std::get_unexpected; // depr C++11, rm C++17
+    using std::set_unexpected; // depr C++11, rm C++17
+    using std::uncaught_exception; // depr C++17, rm C++20
+    using std::unexpected; // depr C++11, rm C++17
+    using std::unexpected_handler; // depr C++11, rm C++17
+#endif
     // -- new<-core.hxx
     using std::bad_alloc;
     using std::bad_array_new_length;
